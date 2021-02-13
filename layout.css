@@ -1,0 +1,130 @@
+html {
+    font-size: 62.5%;
+    
+}
+
+body {
+    background-color: #84C15B;
+    font-family: 'Roboto', sans-serif;
+}
+figure img {
+    max-width: 100%;
+}
+#logo h1, #logo h2 {
+    display: none;
+}
+h2 {
+    background-color:#CBCBCB;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.navigointi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.navigointi > * {
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 10px;
+    border: #598334 solid 1px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+.navigointi li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.vision-image {
+    display: none;
+}
+.vision-text {
+    font-size: 2.4rem;
+    text-align: center;
+    padding : 10px;
+}
+#vision, #boxes {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#boxes section {
+    border: white solid 10px;
+    margin-bottom: 10px;
+}
+#boxes section h2 {
+    border-bottom: white solid 10px;
+}
+footer {
+    color: white;
+    font-size: 1.2rem;
+}
+.somenav {
+    color: white;
+    font-size: 1.6rem;
+}
+.right {
+    float: right;
+    margin-right: 10px;
+}
+.black {
+    color: black;
+}
+/* tablet säännöt*/
+@media only screen and (min-width: 426px) {
+    .navigointi > * {
+        flex-basis: 0;
+    }
+    
+    #vision {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        background-color: beige;
+        border: solid white 10px;
+        margin: 10px;
+    }
+    #vision .vision-text {
+        flex-grow: 2;
+        flex-basis: 0;
+    }
+    #vision .vision-image {
+        display: block;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    #boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #boxes > * {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    #news {
+        flex-basis: 100%;
+        background-color: white;
+
+    }
+    #specials {
+        margin-right: 10px;
+    }
+}
+/* DeskTop säännöt */
+@media only screen and (min-width: 769px) {
+    #news {
+        flex-basis: 0;
+    }
+    #events {
+        margin-right: 10px;
+    }
+  }
